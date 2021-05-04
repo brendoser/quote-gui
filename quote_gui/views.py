@@ -1,6 +1,6 @@
 # Python Packages
 import tkinter as tk
-from models import Form
+from quote_gui.models import Form
 from PIL import ImageTk, Image
 
 

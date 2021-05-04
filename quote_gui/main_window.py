@@ -1,7 +1,6 @@
 # Python Packages
 import tkinter as tk
-import views as views
-import models as models
+from quote_gui import models as models, views as views
 
 
 class MainWindow:
