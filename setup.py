@@ -8,5 +8,6 @@ setup(
     license='',
     author='brenden.dielissen',
     author_email='brendendielissen@gmail.com',
-    description='A GUI for displaying quotes from books on Amazon.'
+    description='A GUI for displaying quotes from books on Amazon.',
+    install_requires=['Pillow>=8.2.0', 'tk>=0.1.0']
 )
