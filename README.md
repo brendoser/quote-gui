@@ -3,7 +3,7 @@ A GUI for displaying quotes from books on Amazon.
 
 
 
-#Install
+# Install
 
 - Python >= 3.8 required
 
