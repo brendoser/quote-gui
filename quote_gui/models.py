@@ -35,7 +35,7 @@ class SUB_CATEGORIES(FormEnum):
     HISTORY = 'history/'
     MATHEMATICS = 'mathematics/'
     MEMOIR = 'memoir/'
-    PHILOSOPHY = 'philosophy/'
+    PHILOSOPHY = 'philosphy/'
     PHYSICS = 'physics/'
     POLITICS = 'politics/'
     PSYCHOLOGY = 'psychology/'
