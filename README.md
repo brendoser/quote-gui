@@ -1,4 +1,6 @@
 # quote-gui
+![plot](./GUI.PNG)
+
 A GUI for displaying quotes from books on Amazon.
 
 Quotes are taken from the same API as https://www.how-to-type.com/typing-practice/quote/
