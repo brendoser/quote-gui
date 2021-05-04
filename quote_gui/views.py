@@ -1,15 +1,18 @@
 # Python Packages
+import io
+import importlib
 import tkinter as tk
-from quote_gui.models import Form
 from PIL import ImageTk, Image
+from quote_gui.models import Form
 
 
 class Background:
 
-    def __init__(self, root, image='Background.png'):
+    def __init__(self, root):
         self._root = root
         self.frame = tk.Frame(master=self._root)
-        image = Image.open(image)
+        image = importlib.resources.read_binary('quote_gui', 'Background.PNG')
+        image = Image.open(io.BytesIO(image))
         image = image.resize((415, 150), Image.ANTIALIAS)
         background = ImageTk.PhotoImage(image)
         im_label = tk.Label(master=self.frame, image=background)

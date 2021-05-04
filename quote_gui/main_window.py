@@ -1,4 +1,5 @@
 # Python Packages
+import os
 import tkinter as tk
 from quote_gui import models as models, views as views
 
@@ -8,7 +9,7 @@ class MainWindow:
     def __init__(self):
         self._root = tk.Tk()
 
-        self.bg = views.Background(root=self._root, image='Background.png')
+        self.bg = views.Background(root=self._root)
         self.bp = views.ButtonPanel(
             frame=tk.Frame(master=self._root, height=100),
             button_handler=lambda *args: self.fetch_new_quote())
@@ -27,7 +28,6 @@ class MainWindow:
         self.fetch_new_quote()
         self._root.mainloop()
 
-
     def fetch_new_quote(self):
         form = models.Form(
             models.CATEGORIES.from_formatted(self.bp.category_var.get()),
@@ -40,6 +40,10 @@ class MainWindow:
         self.qi.author.set(quote_data.author)
 
 
-if __name__ == '__main__':
+def main():
     mw = MainWindow()
     mw.run()
+
+
+if __name__ == '__main__':
+    main()
